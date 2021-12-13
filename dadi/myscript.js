@@ -6,13 +6,18 @@ console.log(tiroutente);
 const tiropc = Math.floor(Math.random()*6 +1);
 console.log(tiropc);
 
+
 //condizioni per decretare vittoria/pareggio/sconfitta
+let esito = document.getElementById("esito");
 if (tiroutente > tiropc){
     console.log("Hai vinto!");
+    esito.innerHTML += 'TU! HAI VINTO!'
 }else if (tiroutente < tiropc){
     console.log("Hai perso!");
+    esito.innerHTML += 'TU! HAI PERSO!'
 }else{
     console.log("Pareggio!");
+    esito.innerHTML += 'PAREGGIO!'
 }
 
 //if per possibile comparse del dado dell'utente
@@ -46,3 +51,5 @@ if(tiropc == 1){
 }else{
     scatola2.innerHTML += '<img src="img/inverted-dice-6.svg">';
 }
+
+//Definizione di rematch al click di gioca di nuovo

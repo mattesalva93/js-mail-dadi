@@ -13,15 +13,28 @@
 <body>
 
     <main>
-        <div class="container" >
-            <div class="row" id="container">
-                <div id="dadoutente" class="col-6">
+        <div class="container-fluid ms_main-style" >
+            <div class="row d-flex justify-content-center align-items-center pt-5">
 
+                <div id="dadoutente" class="col-5 text-center ms_dice-style">
+                    <h1 class="pt-5">Utente</h1>
                 </div>
-                <div id= "dadopc" class="col-6">
-
+                <div class="col-2 text-center ms_dice-style">
+                    <img class="ms_style-versus" src="img/versus.svg" alt="">
+                </div>
+                <div id="dadopc" class="col-5 text-center ms_dice-style">
+                    <h1 class="pt-5">IA</h1>
                 </div>
 
+            </div>
+
+            <div class="row text-center pt-5">
+                <div class="col-12">
+                    <h1 id="esito"></h1>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-dark rounded-pill">Gioca di nuovo</button>
+                </div>
             </div>
         </div>
     </main>  
